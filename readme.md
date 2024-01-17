@@ -1,0 +1,2 @@
+- contest: https://atcoder.jp/
+- dashboard: https://kenkoooo.com/atcoder/#/table/yukibach
