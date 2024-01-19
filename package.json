@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "complete": "npx ts-node solutions_ts/$npm_config_task/answer.ts < solutions_ts/$npm_config_task/input.txt"
+  }
+}
