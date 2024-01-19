@@ -34,8 +34,15 @@ inputs = fs.readFileSync("/dev/stdin", "utf8");
 inputArray = inputs.split(/\s/);
 main();
 
-function main() {
+function f(x:number):number {
+  return x**2 + 2*x + 3;
+}
+// const f = (x: number) => x ** 2 + 2 * x + 3;
 
+function main() {
+  const t = nextNum();
+  const ans:number = f(f(f(t) + t) + f(f(t)));
+  console.log(ans);
 }
 
 // $ npm run complete --task=sample

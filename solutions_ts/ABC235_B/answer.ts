@@ -35,7 +35,25 @@ inputArray = inputs.split(/\s/);
 main();
 
 function main() {
+  const N = nextNum();
+  // let pos = nextNum();
+  // for (let i = 0; i < N - 1; i++) {
+  //   const right = nextNum();
+  //   if (pos < right) pos = right
+  //   else {
+  //     console.log(pos);
+  //     break;
+  //   }
+  //   if (i === N - 2) console.log(right);
+  // }
 
+  const H = nextNums(N);
+  for (let i = 0; i < N; i++) {
+    if (H[i] >= H[i + 1] || i === N - 1) {
+      console.log(H[i]);
+      break;
+    }
+  }
 }
 
 // $ npm run complete --task=sample
