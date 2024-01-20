@@ -15,4 +15,5 @@ if [ -d "$DESTINATION" ]; then
 else
   cp -r solutions_py/sample $DESTINATION
   echo "Created folder: $DESTINATION"
+  code -r $DESTINATION/*
 fi
