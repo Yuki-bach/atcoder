@@ -41,16 +41,17 @@ function main() {
 
   for(let i = 0; i < Q; i++) {
     const [A, B]: number[] = nextNums(2);
-    for (const p of P) {
-      if (p === A) {
-        console.log(A);
-        break;
-      }
-      if (p === B) {
-        console.log(B);
-        break;
-      }
-    }
+    console.log(P.indexOf(A) < P.indexOf(B) ? A : B);
+    // for (const p of P) {
+    //   if (p === A) {
+    //     console.log(A);
+    //     break;
+    //   }
+    //   if (p === B) {
+    //     console.log(B);
+    //     break;
+    //   }
+    // }
   }
 }
 
