@@ -1,10 +1,5 @@
 # 🚀 AtCoder Solutions Collection ✨
 
-<div align="center">
-
-🎯 **Competitive Programming Journey** 🎯
-
-</div>
 
 ---
 
