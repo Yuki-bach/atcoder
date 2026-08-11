@@ -37,8 +37,7 @@ main();
 function checker(S: string, T: string) {
   if (S === T) return true;
   for (let i = 0; i < S.length - 1; i++) {
-    const SDash =
-      S.substring(0, i) + S.at(i + 1) + S.at(i) + S.substring(i + 2);
+    const SDash = S.substring(0, i) + S.at(i + 1) + S.at(i) + S.substring(i + 2);
     if (SDash === T) {
       return true;
     }

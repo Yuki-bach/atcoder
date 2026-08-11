@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -35,15 +35,15 @@ inputArray = inputs.split(/\s/);
 main();
 
 function main() {
-  const s = [...next().split(''), ...next().split('')];
-  const blackNum = s.filter(d => d==="#").length;
-  const isFalse = blackNum < 3
-    && ((s[0]==='#' && s[3]==='#') || (s[1]==='#' && s[2]==='#'));
+  const s = [...next().split(""), ...next().split("")];
+  const blackNum = s.filter((d) => d === "#").length;
+  const isFalse =
+    blackNum < 3 && ((s[0] === "#" && s[3] === "#") || (s[1] === "#" && s[2] === "#"));
 
   if (isFalse) {
     console.log("No");
   } else {
-    console.log("Yes")
+    console.log("Yes");
   }
 }
 

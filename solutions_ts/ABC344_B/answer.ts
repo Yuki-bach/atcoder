@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -36,13 +36,11 @@ main();
 
 function main() {
   const A: string[] = [];
-  /* eslint-disable no-constant-condition */
   while (true) {
     const a: string = next();
     A.push(a);
     if (a === "0") break;
   }
-  /* eslint-enable no-constant-condition */
   A.reverse();
   console.log(A.join("\n"));
 }

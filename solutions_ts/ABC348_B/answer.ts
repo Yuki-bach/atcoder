@@ -45,14 +45,11 @@ function main() {
   for (let i = 0; i < N; i++) {
     matrix[i] = [];
     for (let j = 0; j < N; j++) {
-      matrix[i].push(
-        (posList[i][0] - posList[j][0]) ** 2 +
-          (posList[i][1] - posList[j][1]) ** 2
-      );
+      matrix[i].push((posList[i][0] - posList[j][0]) ** 2 + (posList[i][1] - posList[j][1]) ** 2);
     }
   }
   matrix.forEach((row) => {
-    const maxValue = (Math.max(...row.filter((v) => v !== 0)));
+    const maxValue = Math.max(...row.filter((v) => v !== 0));
     console.log(row.findIndex((v) => v === maxValue) + 1);
   });
 }

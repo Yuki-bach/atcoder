@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "no-unused-vars": "off",
+    "unicorn/no-new-array": "off",
+    "typescript/no-wrapper-object-types": "off"
+  }
+}

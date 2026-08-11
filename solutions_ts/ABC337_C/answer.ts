@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -39,7 +39,7 @@ function main() {
   const A = nextNums(N);
   const b = new Array(N + 1).fill(0);
 
-  let tmp = 0
+  let tmp = 0;
   for (let i = 0; i < N; i++) {
     if (A[i] === -1) {
       tmp = i + 1;
@@ -47,8 +47,8 @@ function main() {
       b[A[i]] = i + 1;
     }
   }
-  
-  const ans :number[] = [tmp];
+
+  const ans: number[] = [tmp];
   for (let i = 0; i < N - 1; i++) {
     tmp = b[tmp];
     ans.push(tmp);

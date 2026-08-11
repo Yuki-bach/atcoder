@@ -39,7 +39,7 @@ function main() {
   const A = new Set(nextNums(N).filter((v) => v <= K));
 
   const aSum = Array.from(A).reduce((acc, cur) => acc + cur, 0);
-  const sum = BigInt(K) * BigInt(K + 1) / BigInt(2);
+  const sum = (BigInt(K) * BigInt(K + 1)) / BigInt(2);
   const ans: BigInt = sum - BigInt(aSum);
 
   console.log(ans.toString());

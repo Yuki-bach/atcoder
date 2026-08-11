@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -34,14 +34,14 @@ inputs = fs.readFileSync("/dev/stdin", "utf8");
 inputArray = inputs.split(/\s/);
 main();
 
-function f(x:number):number {
-  return x**2 + 2*x + 3;
+function f(x: number): number {
+  return x ** 2 + 2 * x + 3;
 }
 // const f = (x: number) => x ** 2 + 2 * x + 3;
 
 function main() {
   const t = nextNum();
-  const ans:number = f(f(f(t) + t) + f(f(t)));
+  const ans: number = f(f(f(t) + t) + f(f(t)));
   console.log(ans);
 }
 

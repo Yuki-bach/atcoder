@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -37,7 +37,7 @@ main();
 function main() {
   const S: string = next();
   const index: number = +S.substring(3, 6);
-  const checker: boolean = 0 < index && index < 350 && index != 316
+  const checker: boolean = 0 < index && index < 350 && index != 316;
   const ans: string = checker ? "Yes" : "No";
   console.log(ans);
 }

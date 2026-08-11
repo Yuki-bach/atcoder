@@ -41,7 +41,7 @@ function main() {
   for (let i = 0; i < H; i++) {
     matrix[i] = new Array(W).fill(".");
   }
-  
+
   const moves = [
     [0, -1],
     [1, 0],

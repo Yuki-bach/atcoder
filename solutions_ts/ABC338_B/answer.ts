@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -37,17 +37,17 @@ main();
 function main() {
   const S = next();
 
-  const count :{[name: string]: number}= {};
+  const count: { [name: string]: number } = {};
   for (const c of S) {
-    if (c in count) count[c] += 1
-    else count[c] = 1
+    if (c in count) count[c] += 1;
+    else count[c] = 1;
   }
 
-  let ans :string = S[0];
-  let maxCount :number = 0;
+  let ans: string = S[0];
+  let maxCount: number = 0;
   for (const c of Object.keys(count)) {
     if (count[c] > maxCount) {
-      maxCount = count[c]
+      maxCount = count[c];
       ans = c;
     } else if (count[c] === maxCount) {
       ans = c < ans ? c : ans;

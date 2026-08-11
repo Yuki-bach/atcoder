@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -45,7 +45,7 @@ function main() {
   let ans = 0;
   for (let i = 0; i < N - 1; i++) {
     for (let j = i + 1; j < N; j++) {
-      const len_squared = (points[i][0] - points[j][0])**2 + (points[i][1] - points[j][1])**2;
+      const len_squared = (points[i][0] - points[j][0]) ** 2 + (points[i][1] - points[j][1]) ** 2;
       ans = Math.max(ans, len_squared);
     }
   }

@@ -37,8 +37,8 @@ main();
 function main() {
   const S: string = next();
   const ans: number | undefined = S.split("")
-    .map((v, i, a) => a.indexOf(v) === a.lastIndexOf(v) ? i : -1)
-    .find(v => v !== -1);
+    .map((v, i, a) => (a.indexOf(v) === a.lastIndexOf(v) ? i : -1))
+    .find((v) => v !== -1);
   console.log(ans !== undefined ? ans + 1 : -1);
 }
 

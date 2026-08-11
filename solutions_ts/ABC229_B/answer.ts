@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -38,7 +38,7 @@ function main() {
   const [A, B] = nexts(2);
 
   for (let i = 1; i < Math.min(A.length, B.length) + 1; i++) {
-    const isHard = (Number(A.at(-i)) + Number(B.at(-i))) > 9;
+    const isHard = Number(A.at(-i)) + Number(B.at(-i)) > 9;
     if (isHard) {
       console.log("Hard");
       return;

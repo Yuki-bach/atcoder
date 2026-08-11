@@ -40,7 +40,7 @@ Execute solutions with input files:
 # 💎 Ruby
 ./scripts/run_rb.sh <task_name>
 
-# 📘 TypeScript (includes ESLint check)
+# 📘 TypeScript (includes Oxlint check)
 ./scripts/run_ts.sh <task_name>
 ```
 

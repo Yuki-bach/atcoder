@@ -40,11 +40,11 @@ function main() {
   for (let i = 0; i < N; ++i) {
     A.push(nextNums(N));
   }
-  for (let j=0; j < N; ++j) {
+  for (let j = 0; j < N; ++j) {
     const tmp: number[] = [];
-    for (let i=0; i < N; ++i) {
+    for (let i = 0; i < N; ++i) {
       if (A[i][j] === 1) {
-        tmp.push(i+1);
+        tmp.push(i + 1);
       }
     }
     console.log(...tmp);

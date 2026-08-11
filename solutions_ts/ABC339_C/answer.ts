@@ -44,9 +44,7 @@ function main() {
     sum += num;
     return sum;
   });
-  const initNum = Math.min(...sums) < 0
-    ? Math.min(...sums) * -1
-    : 0;
+  const initNum = Math.min(...sums) < 0 ? Math.min(...sums) * -1 : 0;
 
   const ans = initNum + sums[sums.length - 1];
   console.log(ans);

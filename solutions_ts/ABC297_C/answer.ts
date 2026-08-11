@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -40,7 +40,7 @@ function main() {
     let S = next();
     for (let j = 0; j < W - 1; j++) {
       if (S.substring(j, j + 2) === "TT") {
-        S = S.substring(0, j) + "PC" + S.substring(j + 2)
+        S = S.substring(0, j) + "PC" + S.substring(j + 2);
       }
     }
     console.log(S);

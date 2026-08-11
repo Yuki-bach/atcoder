@@ -1,10 +1,15 @@
 {
   "scripts": {
-    "complete": "npx ts-node solutions_ts/$npm_config_task/answer.ts < solutions_ts/$npm_config_task/input.txt"
+    "complete": "tsx solutions_ts/$npm_config_task/answer.ts < solutions_ts/$npm_config_task/input.txt",
+    "lint": "oxlint solutions_ts",
+    "format": "oxfmt --write solutions_ts package.json .oxlintrc.json .oxfmtrc.json",
+    "format:check": "oxfmt --check solutions_ts package.json .oxlintrc.json .oxfmtrc.json"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.19.0",
-    "@typescript-eslint/parser": "^6.19.0",
-    "eslint": "^8.56.0"
+    "@types/node": "^26.2.0",
+    "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
   }
 }

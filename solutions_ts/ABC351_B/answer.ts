@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -39,17 +39,17 @@ function main() {
   const A: string[] = [];
   const B: string[] = [];
 
-  for(let i = 0; i < N; ++i) {
+  for (let i = 0; i < N; ++i) {
     A.push(next());
   }
-  for(let i = 0; i < N; ++i) {
+  for (let i = 0; i < N; ++i) {
     B.push(next());
   }
 
   for (let i = 0; i < N; ++i) {
     for (let j = 0; j < N; ++j) {
       if (A[i][j] !== B[i][j]) {
-        console.log(i+1, j+1);
+        console.log(i + 1, j + 1);
         return;
       }
     }

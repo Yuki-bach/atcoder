@@ -44,7 +44,7 @@ function main() {
       substrings.add(substring);
     }
   }
-  
+
   console.log(substrings.size);
 }
 

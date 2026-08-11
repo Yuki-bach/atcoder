@@ -4,6 +4,7 @@
     "target": "esnext",
     "lib": ["esnext"],
     "module": "CommonJS",
+    "types": ["node"],
     "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

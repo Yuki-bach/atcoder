@@ -39,7 +39,7 @@ function main() {
   const P: number[] = nextNums(N);
   const Q: number = nextNum();
 
-  for(let i = 0; i < Q; i++) {
+  for (let i = 0; i < Q; i++) {
     const [A, B]: number[] = nextNums(2);
     console.log(P.indexOf(A) < P.indexOf(B) ? A : B);
     // for (const p of P) {

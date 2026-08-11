@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -34,8 +34,8 @@ inputs = fs.readFileSync("/dev/stdin", "utf8");
 inputArray = inputs.split(/\s/);
 main();
 
-function f(a :number, b :number) :number {
-  return 4*a*b + 3*a + 3*b;
+function f(a: number, b: number): number {
+  return 4 * a * b + 3 * a + 3 * b;
 }
 
 // area = 4ab + 3a + 3b
@@ -49,7 +49,7 @@ function main() {
       sDash.push(f(a, b));
     }
   }
-  
+
   let cnt = 0;
   for (const s of S) {
     if (!sDash.includes(s)) {

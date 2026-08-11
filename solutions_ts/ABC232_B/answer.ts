@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -37,15 +37,15 @@ main();
 function main() {
   const S = next().split("");
   const T = next().split("");
-  const zCode = 'z'.charCodeAt(0);
+  const zCode = "z".charCodeAt(0);
 
   for (let i = 0; i < 26; i++) {
-    const SDash = S.map(s => {
+    const SDash = S.map((s) => {
       const code = s.charCodeAt(0);
-      const newCharCode = (code + i <= zCode) ? code + i : code + i - 26;
+      const newCharCode = code + i <= zCode ? code + i : code + i - 26;
       return String.fromCharCode(newCharCode);
     });
-    if (T.join('') === SDash.join('')) {
+    if (T.join("") === SDash.join("")) {
       console.log("Yes");
       return;
     }

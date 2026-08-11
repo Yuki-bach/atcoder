@@ -16,17 +16,17 @@ function nextBigInt() {
 }
 function nexts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = next();
+  for (let i = 0; i < length; ++i) arr[i] = next();
   return arr;
 }
 function nextNums(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextNum();
+  for (let i = 0; i < length; ++i) arr[i] = nextNum();
   return arr;
 }
 function nextBigInts(length: number) {
   const arr = [];
-  for(let i = 0; i < length; ++i) arr[i] = nextBigInt();
+  for (let i = 0; i < length; ++i) arr[i] = nextBigInt();
   return arr;
 }
 
@@ -40,12 +40,14 @@ function main() {
   const A = nextNums(N);
   const B = nextNums(N);
 
-  let ans :number = 0;
+  let ans: number = 0;
 
   for (let aNum = 0; aNum < Math.max(...Q) + 1; aNum++) {
     const aChecker = A.every((a, i) => Q[i] >= a * aNum);
     if (!aChecker) break;
-    const bNum = Math.min(...B.map((b, i) => b === 0 ? Infinity : Math.floor((Q[i] - A[i] * aNum) / b)));
+    const bNum = Math.min(
+      ...B.map((b, i) => (b === 0 ? Infinity : Math.floor((Q[i] - A[i] * aNum) / b))),
+    );
     if (!Number.isNaN(bNum)) ans = Math.max(ans, aNum + bNum);
   }
 
